@@ -1,0 +1,16 @@
+{
+   "name": "Samsung Galaxy S20",
+   "category": "Smartphone",
+   "productInfo": [
+      {
+         "website": "snapdeal",
+         "url": "http://snapdeal",
+         "price": 4000
+      },
+      {
+         "website": "Amazon.com",
+         "url": "http://amazon.com/435783",
+         "price": 7000
+      }
+   ]
+}

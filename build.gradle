@@ -1,0 +1,33 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.1'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+	id 'application'
+}
+springBoot {
+	mainClassName = "com.relayr.productcomparison.ProductComparisonApplication"
+}
+
+group = 'com.relayr'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-jersey'
+	implementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	compileOnly("org.springframework.boot:spring-boot-devtools")
+}
+
+
+test {
+	useJUnitPlatform()
+}
+
