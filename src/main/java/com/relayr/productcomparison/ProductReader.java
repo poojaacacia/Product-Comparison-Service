@@ -17,17 +17,18 @@ import java.util.Objects;
  */
 @FunctionalInterface
 public interface ProductReader {
+
     List<ProductWebsiteDetails> read(String filePath) throws IOException;
 
 
     static List<ProductWebsiteDetails> readFile(Constants.FILE_TYPE fileType) throws IOException {
         switch (fileType) {
             case CSV:
-                return csvProductReader().read("data/ProductsList.csv");
+                return csvProductReader().read(Constants.CSV_PATH);
             case TEXT:
-                return textProductReader().read("data/ProductsList.txt");
+                return textProductReader().read(Constants.TXT_PATH);
             case XML:
-                return xmlProductReader().read("data/ProductsList.xml");
+                return xmlProductReader().read(Constants.XML_PATH);
             default:
                 return null;
         }
