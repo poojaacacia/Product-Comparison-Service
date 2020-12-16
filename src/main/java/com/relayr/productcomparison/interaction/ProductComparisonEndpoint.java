@@ -49,6 +49,7 @@ public class ProductComparisonEndpoint {
     @RequestMapping("product/load-data")
     public Boolean loadDataIntoDb(String fileType ) throws IOException {
         logger.info("Received request to load {} type data source " , fileType);
+
         return productComparisonService.loadDataByFileType(fileType);
     }
 
