@@ -48,3 +48,9 @@ Apple IPhone 11,Smartphone,BestBuy.com,http://BestBuy.com/23648435,1100,USD
 Apple IPhone 11,Smartphone,Flipkart.com,http://flipkart.com/23648435,970,USD
 LG LED TV,Television,Amazon.com,http://amazon.com/96435,3500,USD
 Samsung Galaxy S20,Smartphone,Flipkart.com,http://flipkart.com/13245,1130,USD
+
+---------------------------------------------------------------------------------
+
+Docker run command
+
+docker run --tty --publish 8080:8080 productcomparison:0.0.1-SNAPSHOT
